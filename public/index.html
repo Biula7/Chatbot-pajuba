@@ -1,30 +1,28 @@
-<!-- public/index.html (A PÁGINA WEB) -->
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Chatbot IA</title>
-    <!-- Carrega o CSS que está na mesma pasta -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot Pajubá com Memória</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="chatbot-container">
-        <div class="chatbot-header">
-            <h2>Chatbot Assistente IA</h2>
-            <p>Online</p>
-        </div>
-        <div class="chatbot-messages" id="chat-messages">
-            <!-- Mensagens aparecem aqui -->
-        </div>
-        <div class="chatbot-input">
-            <input type="text" id="user-input" placeholder="Digite sua mensagem...">
-            <button id="send-btn">Enviar</button>
-        </div>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>Chatbot Pajubá - Bapho Total!</h1>
+      <div id="datetime"></div>
     </div>
 
-    <!-- Carrega o JavaScript que está na mesma pasta -->
-    <script src="script.js"></script>
+    <nav class="menu">
+      <a href="sobre.html">Sobre o Chatbot</a>
+    </nav>
+
+    <div id="chatbox" class="chatbox"></div>
+    <div class="input-container">
+      <input id="userInput" type="text" placeholder="Manda o babado, mona!">
+      <button onclick="sendMessage()">Lacrar</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
